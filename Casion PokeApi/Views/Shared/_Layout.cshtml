@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Poke.css")
+    @Scripts.Render("~/bundles/modernizr")    
+</head>
+
+<body style="background: #000002; color: #ffffff;">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #DC0A2D;">
+        <div class="container">
+            <div class="nav-poke">
+                <div class="frame-elipse"> </div>
+                <p>Casion Pokedex</p>
+                <div class="frame">
+                    <div class="group"></div>
+                    <p>Ash</p>
+                </div>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Casion Pokedex", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                @*<ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Início", "Index", "Pokemons")</li>
+                  </ul>*@
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <dl class="row">
+                <dd class="col-sm-3">&copy; @DateTime.Now.Year - Casion</dd>
+                <dd class="text-right col-sm-9">#TechGoodies</dd>
+            </dl>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -17,7 +17,7 @@ namespace Casion_PokeApi.Models
 
         public Sprites Sprites { get; set; }
 
-        public List<Type> Types { get; set; }
+        public List<Types> Types { get; set; }
 
         public Pokemons() {}
 

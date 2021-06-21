@@ -10,7 +10,7 @@ namespace Casion_PokeApi.Models
     {
                 
         [JsonProperty("type")]
-        public List<Type> Type { get; set; }        
+        public Type Type { get; set; }               
         
     }
 }

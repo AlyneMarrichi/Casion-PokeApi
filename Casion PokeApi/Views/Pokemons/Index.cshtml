@@ -23,17 +23,17 @@
                             </div>
                         </div>
                         <div class="type">
-                            @*<p class="card-text badge">@item.Types[0].Name</p>
-                              <p class="card-text badge badge-poke">@item.Types[1].Name</p>*@
-                            <p class="card-text badge">Null</p>
-                            <p class="card-text badge badge-poke">Null</p>
+                            <p class="card-text badge">@item.Types[0].Type.Name</p>
+                            @if (item.Types.Count == 2)
+                            {
+                                <p class="card-text badge badge-poke">@item.Types[1].Type.Name</p>
+                            }                            
                         </div>
-                         
                         @*<div class="fade">
                             <span class="fade-retangulo"> </span>
                             <span class="fade-ret"> </span>
                         </div>*@
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>            

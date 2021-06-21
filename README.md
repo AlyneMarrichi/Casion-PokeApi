@@ -6,7 +6,15 @@ Lista dos 20 Pokémons consultados em uma [API JSON](https://davilson.github.io/
 O ambiente de desenvolvimento utilizado foi o Visual Studio Comunnity 2019.
 
 
+## Packages
 
+Foram utilizados os seguintes packages no projeto:
+
+```python
+dotnet add package bootstrap
+dotnet add package Web.MVC
+dotnet add package Newtonsoft.json
+```
 
 
 ## Requisitos solicitados no teste:
